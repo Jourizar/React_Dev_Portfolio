@@ -1,14 +1,27 @@
+import { useState } from "react"
+import PropTypes from 'proptypes'
+
+
 function Card(props){
-    
+    const [cardData, setCardData] = useState({
+        cardThumbnail:'',
+        cardTitle: '',
+        cardDescription:''
+    });
+
+    // set API routes for backend
+
+
+
 
     return(
         <>
         <div className="cardWrapper">
             <div className="cardImg">
-                <img src={props.cardPic} alt="Card Photo" />
+            <img src={cardData.cardThumbnail} alt="Card Photo" />
             </div>
-            <h5>{props.title}</h5>
-            <p>{props.description}</p>
+            <h5>{cardData.cardTitle}</h5>
+            <p>{cardData.cardDescription}</p>
         </div>
         </>
     );
