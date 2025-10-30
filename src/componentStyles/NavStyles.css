@@ -1,0 +1,38 @@
+nav{
+    position: relative;
+    background-color: green;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul{
+  display: none;
+}
+
+ul{
+    position: relative;
+    list-style-type:none;
+}
+
+nav ul.open {
+    display: block;
+}
+
+li{
+    display: inline-block;
+}
+
+li a{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+
+}
+
+/* media queries for tablet and phone */
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  nav {
+    background-color: lightgreen;
+  }
+}
