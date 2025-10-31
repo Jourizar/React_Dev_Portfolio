@@ -11,9 +11,10 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dom": "^0.0.3",
     "proptypes": "^1.1.0",
     "react": "^19.1.1",
-    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.9.5",
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {

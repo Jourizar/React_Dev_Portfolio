@@ -1,5 +1,6 @@
 import '../componentStyles/NavStyles.css';
 import { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
 function Navigation(){
@@ -11,14 +12,13 @@ function Navigation(){
     };
 
     return(
-
         <>
             <nav>
                 <span onClick={toggleMenu}>✖</span>
                 <ul className={isOpen ? 'open' : ''}>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li> <Link to='/About'>About</Link> </li>
+                <li> <Link to='/Projects'> Projects</Link> </li>
+                     <li> <Link to='/Blog'>Blog</Link></li>
                 </ul>
                 
             </nav>

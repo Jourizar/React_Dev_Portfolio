@@ -10,10 +10,6 @@ function Card(props){
     });
 
     // set API routes for backend
-
-
-
-
     return(
         <>
         <div className="cardWrapper">
