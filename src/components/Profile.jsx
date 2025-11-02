@@ -1,9 +1,19 @@
+import { useState } from "react";
+
 function Profile(props){
+    const [profileData, setProfileData] = useState(
+        {
+            profileImg: '',
+            FrontPic: '',
+            frontText: ''
+        }
+    );
+
     return(
         <>
-        <img src={props.frontPic} alt="Profile Photo" />
-        <h2>{props.description}</h2>
-        <p>{props.paragraph}</p>   
+        <img src={profileData.profileImg} alt="Profile Photo" />
+        <h2>{profileData.FrontPic}</h2>
+        <p>{profileData.frontText}</p>   
         </>
     );
 }

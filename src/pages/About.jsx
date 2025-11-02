@@ -3,7 +3,7 @@ import Profile from '../components/Profile';
 function About(){
     return(
         <>
-        <Profile frontPic =  descritpion = />
+        <Profile/>
         <h1>About page</h1>
         </>
     );

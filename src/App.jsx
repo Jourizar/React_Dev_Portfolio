@@ -4,8 +4,8 @@ import Navigation from './components/Navigation';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // pages to route
 import About from './pages/About';
-import Blog from './pages/blog';
-import Projects from './pages/projects';
+import Blog from './pages/Blog';
+import Projects from './pages/Projects';
 
 function LandingPage(){
   return(
